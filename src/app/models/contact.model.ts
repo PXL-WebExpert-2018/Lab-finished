@@ -1,5 +1,5 @@
 export class Contact {
-  constructor(private name: string, private email: string, private phone: string, private isFavorite = false, private avatar = 'assets/avatar.png') {
+  constructor(public id: string, public name: string, public email: string, public phone: string, public isFavorite = false, public avatar = 'assets/avatar.png') {
   }
 }
 

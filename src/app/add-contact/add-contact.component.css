@@ -1,0 +1,11 @@
+:host {
+	margin: 1rem -0.5rem;
+	display: block;
+}
+p {
+	text-align: center;
+	font-style: italic;
+	margin: 1rem;
+	font-size: 1.2rem;
+	color: #2980b9;
+}

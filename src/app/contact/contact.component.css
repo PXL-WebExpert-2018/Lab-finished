@@ -1,0 +1,5 @@
+:host.isLink:hover {
+	background: #27ae60;
+	color: #fff;
+	cursor: pointer;
+}

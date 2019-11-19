@@ -1,0 +1,41 @@
+:host {
+	margin: 1rem -0.5rem;
+	display: block;
+}
+button {
+	border: 1px solid;
+	color:  #fff;
+	padding: 0.5rem;
+	margin:  0.5rem;
+	border-radius: 3px;
+	width: calc(100% - 1rem);
+	cursor: pointer;
+}
+.delete {
+	border-color: #c0392b;
+	background: #e74c3c;
+}
+.delete:hover {
+	color:  #c0392b;
+	background: #fff;
+}
+.edit {
+	background: #3498db;
+	border-color: #2980b9;
+}
+.edit:hover {
+	background: #fff;
+	color: #2980b9;
+}
+p {
+	text-align: center;
+	font-style: italic;
+	margin: 1rem;
+	font-size: 1.2rem;
+}
+.message-delete {
+	color:  #c0392b;
+}
+.message-update {
+	color: #2980b9;
+}

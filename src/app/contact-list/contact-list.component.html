@@ -1,0 +1,15 @@
+<button
+  type="button"
+  [class.onlyFavorites]="onlyFavorites"
+  (click)="toggleView(onlyFavorites)"
+>
+  Show {{ onlyFavorites ? "All" : "Favorites" }}
+</button>
+<app-contact
+  *ngFor="let contact of contactList; let i = index"
+  [contact]="contact"
+  (onUpdate)="handleUpdate($event)"
+  class="isLink"
+  routerLink="/contact/{{ contact.id }}"
+>
+</app-contact>
