@@ -32,6 +32,10 @@ export class ContactComponent implements OnInit {
     event.stopPropagation();
     this.service
       .updateContact(id, { isFavorite: !isFavorite })
-      .subscribe(() => this.onUpdate.emit);
+      .subscribe((data) => {this.onUpdate.emit});
   }
-}   
+
+  delete(id: string){
+    this.service.deleteContact(id).subscribe((data) => console.log(data));
+  }
+}

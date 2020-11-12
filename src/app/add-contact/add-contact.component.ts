@@ -16,8 +16,9 @@ export class AddContactComponent {
   constructor(private service: ContactService) {}
 
   createContact(event: Contact) {
-    this.service.addContact(event).subscribe(() => {
+    this.service.addContact(event).subscribe((data) => {
       this.state = EditorState.created;
+      console.log(data);
       setTimeout(() => (this.state = EditorState.null), 3000);
     });
   }
